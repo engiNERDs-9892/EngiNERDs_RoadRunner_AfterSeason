@@ -2,6 +2,7 @@ package org.firstinspires.ftc.teamcode.drive.opmode.Auto;
 
 import com.acmerobotics.roadrunner.geometry.Pose2d;
 import com.acmerobotics.roadrunner.trajectory.Trajectory;
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.drive.opmode.Auto.AprilTagDetectionPipeline;
@@ -18,6 +19,7 @@ import org.openftc.easyopencv.OpenCvCamera;
 import org.openftc.easyopencv.OpenCvCameraFactory;
 import org.openftc.easyopencv.OpenCvCameraRotation;
 
+@Autonomous
 public class Auto_Blue_Right_RR extends LinearOpMode {
 
     SampleMecanumDrive drivetrain = new SampleMecanumDrive(hardwareMap);

@@ -1,13 +1,13 @@
 package org.firstinspires.ftc.teamcode.drive.opmode.Auto;
 
 import com.acmerobotics.roadrunner.geometry.Pose2d;
+import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
 import org.firstinspires.ftc.teamcode.drive.opmode.RoadRunner.SampleMecanumDrive;
 import org.firstinspires.ftc.teamcode.trajectorysequence.TrajectorySequence;
-import org.openftc.apriltag.AprilTagDetection;
-import org.openftc.easyopencv.OpenCvCamera;
 
+@Autonomous
 public class TrajectorySequence_Test extends LinearOpMode {
 
     SampleMecanumDrive drivetrain = new SampleMecanumDrive(hardwareMap);
