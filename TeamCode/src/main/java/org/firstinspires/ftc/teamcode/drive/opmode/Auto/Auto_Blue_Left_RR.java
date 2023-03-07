@@ -17,7 +17,7 @@ import org.openftc.easyopencv.OpenCvCamera;
 import org.openftc.easyopencv.OpenCvCameraFactory;
 import org.openftc.easyopencv.OpenCvCameraRotation;
 
-@Autonomous
+@Autonomous(name = "Auto_Blue_Left_RR", group = "00-Autonomous", preselectTeleOp = "Enignerds_Control")
 public class Auto_Blue_Left_RR extends LinearOpMode {
 
     SampleMecanumDrive drivetrain = new SampleMecanumDrive(hardwareMap);
