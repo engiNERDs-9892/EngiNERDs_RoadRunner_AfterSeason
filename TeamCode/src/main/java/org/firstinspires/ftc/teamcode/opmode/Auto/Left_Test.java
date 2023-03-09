@@ -12,17 +12,18 @@ public class Left_Test extends LinearOpMode{
 
     public DriveTrain driveTrain;
 
+
+
     @Override
     public void runOpMode() throws InterruptedException {
         driveTrain = new DriveTrain(hardwareMap);
-
+        waitForStart();
 
         //Game Play Button  is pressed
         if (opModeIsActive() && !isStopRequested()) {
 
             //Build parking trajectory based on last detected target by vision
             buildParking();
-            driveTrain.getLocalizer().setPoseEstimate(initPose);
 
             //run Autonomous trajectory
             runParking();
@@ -33,12 +34,12 @@ public class Left_Test extends LinearOpMode{
     TrajectorySequence trajectoryParking ;
 
     //Initialize any other Pose2d's as desired
-    Pose2d initPose; // Starting Pose
+
 
     //Build parking trajectory based on target detected by vision
     public void buildParking(){
 
-        trajectoryParking = driveTrain.trajectorySequenceBuilder(initPose)
+        trajectoryParking = driveTrain.trajectorySequenceBuilder(new Pose2d())
                 .strafeLeft(20)
                 .build();
     }
