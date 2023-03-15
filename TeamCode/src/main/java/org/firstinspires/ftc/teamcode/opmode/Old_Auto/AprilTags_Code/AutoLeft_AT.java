@@ -240,20 +240,20 @@ public class AutoLeft_AT extends LinearOpMode
             Move(directions.STARBOARD, 58, .5);
        }
 
-        // The Left is Sleeve 10 (QR Code 10)
+        // The Left is Sleeve 11 (QR Code 11)
         else if (tagOfInterest.id == Left ) {
             Autonomous();
             Backwards_Raise(5, 0.5, -10, .8);
        }
 
-        // The Middle is Sleeve 20 (QR Code 20)
+        // The Middle is Sleeve 12 (QR Code 12)
         else if (tagOfInterest.id == Middle){
             Autonomous();
             Backwards_Raise(27, 0.7, -10, .8);
         }
 
 
-        // The third else or in this case Right is Sleeve 30 (QR Code 30)
+        // The third else or in this case Right is Sleeve 13 (QR Code 13)
         else {
             Autonomous();
             Backwards_Raise(50, 1, -10, 0.8);

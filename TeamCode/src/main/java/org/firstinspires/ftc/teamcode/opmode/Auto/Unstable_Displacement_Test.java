@@ -10,7 +10,7 @@ import com.qualcomm.robotcore.hardware.Servo;
 import org.firstinspires.ftc.teamcode.opmode.Subsystem.DriveTrain;
 import org.firstinspires.ftc.teamcode.trajectorysequence.TrajectorySequence;
 
-@Autonomous(name = "Strafe_Test", group = "00-Autonomous", preselectTeleOp = "Enginerds_Control")
+@Autonomous(name = "UnstableTemporal_Test", group = "00-Autonomous", preselectTeleOp = "Enginerds_Control")
 public class Unstable_Displacement_Test extends LinearOpMode{
 
     public DriveTrain driveTrain;
@@ -63,8 +63,8 @@ public class Unstable_Displacement_Test extends LinearOpMode{
                 //.forward(20)
                 //.back(20)
                 //.strafeRight(20)
-                .strafeLeft(20)
-                .UNSTABLE_addTemporalMarkerOffset(-3,() -> {Raise(20,.8);})
+                //.strafeLeft(20)
+                .UNSTABLE_addTemporalMarkerOffset(0,() -> {Raise(20,.8);})
                 .build();
     }
 

@@ -27,6 +27,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
+// Doesn't Work how it was intended
 package org.firstinspires.ftc.teamcode.opmode.Old_Auto.Gyro_Code;
 
 import com.qualcomm.hardware.bosch.BNO055IMU;
@@ -311,22 +312,18 @@ public class Auto_Circut_Blue extends LinearOpMode {
         // Autonomous  Code //
         //////////////////////
 
-        //////////////////////
-        // Autonomous  Code //
-        //////////////////////
-
         if (tagOfInterest == null) {
             //put default code here
 
         }
 
-        // The Left is Sleeve 10 (QR Code 10)
+        // The Left is Sleeve 11 (QR Code 11)
         else if (tagOfInterest.id == Left) {
             Autonomous();
             Left_Lower(46, .8,15,.8);
         }
 
-        // The Middle is Sleeve 20 (QR Code 20)
+        // The Middle is Sleeve 12 (QR Code 12)
         else if (tagOfInterest.id == Middle) {
             Autonomous();
             Left_Lower(16,.8,15,.8);
@@ -334,7 +331,7 @@ public class Auto_Circut_Blue extends LinearOpMode {
         }
 
 
-        // The third else or in this case Right is Sleeve 30 (QR Code 30)
+        // The third else or in this case Right is Sleeve 13 (QR Code 13)
         else {
             Autonomous();
             Right_Lower(16,.8,15,.8);

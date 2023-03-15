@@ -267,20 +267,20 @@ public class AutoRight_AT extends LinearOpMode
             Move(directions.STARBOARD, 58, .5);
        }
 
-        // The Left is Sleeve 10 (QR Code 10)
+        // The Left is Sleeve 11 (QR Code 11)
         else if (tagOfInterest.id == Left ) {
             Autonomous();
             Move(directions.FORWARDS, 23, 0.5);
        }
 
-        // The Middle is Sleeve 20 (QR Code 20)
+        // The Middle is Sleeve 12 (QR Code 12)
         else if (tagOfInterest.id == Middle){
             Autonomous();
             Move(directions.BACKWARDS, 1, 0.5);
         }
 
 
-        // The third else or in this case Right is Sleeve 30 (QR Code 30)
+        // The third else or in this case Right is Sleeve 13 (QR Code 13)
         else {
             Autonomous();
             Move(directions.BACKWARDS, 25, 0.5);

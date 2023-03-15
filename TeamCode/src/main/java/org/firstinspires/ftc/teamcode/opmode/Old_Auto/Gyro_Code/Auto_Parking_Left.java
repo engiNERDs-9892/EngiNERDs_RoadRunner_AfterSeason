@@ -317,20 +317,20 @@ public class Auto_Parking_Left extends LinearOpMode {
 
         }
 
-        // The Left is Sleeve 10 (QR Code 10)
+        // The Left is Sleeve 11 (QR Code 11)
         else if (tagOfInterest.id == Left) {
 
             Move(directions.LEFT,57,.5);
             Move(directions.BACKWARDS,26,.3);
         }
 
-        // The Middle is Sleeve 20 (QR Code 20)
+        // The Middle is Sleeve 12 (QR Code 12)
         else if (tagOfInterest.id == Middle) {
             Move(directions.LEFT,57,.5);
         }
 
 
-        // The third else or in this case Right is Sleeve 30 (QR Code 30)
+        // The third else or in this case Right is Sleeve 13 (QR Code 13)
         else {
 
             Move(directions.LEFT,57,.5);
