@@ -1,4 +1,4 @@
-package org.firstinspires.ftc.teamcode.opmode.Auto;
+package org.firstinspires.ftc.teamcode.opmode.Auto.Testing;
 
 import com.acmerobotics.roadrunner.geometry.Pose2d;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
@@ -10,8 +10,8 @@ import com.qualcomm.robotcore.hardware.Servo;
 import org.firstinspires.ftc.teamcode.opmode.Subsystem.DriveTrain;
 import org.firstinspires.ftc.teamcode.trajectorysequence.TrajectorySequence;
 
-@Autonomous(name = "TemporalMarker_Test", group = "00-Autonomous", preselectTeleOp = "Enginerds_Control")
-public class Temporal_Marker extends LinearOpMode{
+@Autonomous(name = "Strafe_Test", group = "00-Autonomous", preselectTeleOp = "Enginerds_Control")
+public class Strafe_Test extends LinearOpMode{
 
     public DriveTrain driveTrain;
 
@@ -49,6 +49,7 @@ public class Temporal_Marker extends LinearOpMode{
 
     //Initialize any other TrajectorySequences as desired
     TrajectorySequence trajectoryParking ;
+
     public void buildParking(){
         Pose2d startPose = new Pose2d(35, 60, Math.toRadians(180));
 
@@ -58,7 +59,11 @@ public class Temporal_Marker extends LinearOpMode{
 
         trajectoryParking = driveTrain.trajectorySequenceBuilder(startPose)
 
-                .addTemporalMarker(0,() -> {Raise(20,.8);})
+                //.turn(90)
+                //.forward(20)
+                //.back(20)
+                //.strafeRight(20)
+                .strafeLeft(20)
                 .build();
     }
 

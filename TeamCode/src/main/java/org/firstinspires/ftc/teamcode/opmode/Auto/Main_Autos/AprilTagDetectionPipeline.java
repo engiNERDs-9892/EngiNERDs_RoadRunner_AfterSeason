@@ -19,7 +19,7 @@
  * SOFTWARE.
  */
 
-package org.firstinspires.ftc.teamcode.opmode.Auto;
+package org.firstinspires.ftc.teamcode.opmode.Auto.Main_Autos;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 
